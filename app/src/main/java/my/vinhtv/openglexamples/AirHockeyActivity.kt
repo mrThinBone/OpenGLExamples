@@ -16,7 +16,7 @@ class AirHockeyActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         glSurfaceView = GLSurfaceView(this)
         glSurfaceView?.setEGLContextClientVersion(2)
-        glSurfaceView?.setRenderer(AirHockeyRenderer())
+        glSurfaceView?.setRenderer(AirHockeyRenderer(this))
         rendererSet = true
         setContentView(glSurfaceView)
     }
